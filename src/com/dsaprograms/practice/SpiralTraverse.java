@@ -17,6 +17,7 @@ public class SpiralTraverse {
         for(int i = 0; i<result.length;i++){
             System.out.print(result[i]+" ");
         }
+
     }
 
     public static int[] spiralTraverse(int [][] arr, int m,int n){
