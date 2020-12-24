@@ -32,8 +32,8 @@ public class GetMazePaths {
             return base2;
         }
 
-        ArrayList<String> pathRow = getMazePaths(sourceRow+1, sourceColumn, destRow,destColumn);
-        ArrayList<String> pathColumn = getMazePaths(sourceRow, sourceColumn+1, destRow,destColumn);
+        ArrayList<String> pathRow = getMazePaths(sourceRow, sourceColumn+1, destRow,destColumn);
+        ArrayList<String> pathColumn = getMazePaths(sourceRow+1, sourceColumn, destRow,destColumn);
         ArrayList<String> result = new ArrayList<String>();
         // Attach h for pathRow.
         for(String s:pathRow){
