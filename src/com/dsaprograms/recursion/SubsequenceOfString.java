@@ -8,6 +8,7 @@ public class SubsequenceOfString {
         ArrayList<String> result =  getSubsequences(str);
         System.out.println(result);
     }
+
     public static ArrayList<String> getSubsequences(String str){
         if(str.length()==0){
             ArrayList<String> base = new ArrayList<>();
