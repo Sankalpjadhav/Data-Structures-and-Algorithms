@@ -1,5 +1,10 @@
 package com.dsaprograms.basedonsorting;
 import java.util.Scanner;
+/*
+1. You are given an array(arr) of integers and a pivot.
+2. You have to re-arrange the given array in such a way that all elements smaller or equal to pivot lie on the left side of pivot and all elements greater than pivot lie on its right side.
+3. You have to achieve this in linear time.
+ */
 public class PartitionArrayBasedOnPivot {
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
