@@ -11,12 +11,15 @@ public class ClimbStairs {
         if(n==0){
             return 1;
         }
+
         else if(n<0){
             return 0;
         }
+
         if(questionBank[n]!=0){
             return questionBank[n];
         }
+
         int forPathOne=climbStairs(n-1,questionBank);
         int forPathTwo=climbStairs(n-2,questionBank);
         int forPathThree=climbStairs(n-3,questionBank);
