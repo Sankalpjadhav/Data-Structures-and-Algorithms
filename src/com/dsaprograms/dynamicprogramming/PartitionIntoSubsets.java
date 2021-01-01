@@ -37,7 +37,6 @@ public class PartitionIntoSubsets {
             System.out.println(0);
             return;
         }
-
         for(int team=1;team<=teams;team++){
             for(int p =1;p<=people;p++){
                 if(p<team){
