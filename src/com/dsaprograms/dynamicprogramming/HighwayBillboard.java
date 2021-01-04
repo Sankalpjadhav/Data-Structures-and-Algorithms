@@ -13,7 +13,7 @@ A number M(length of highway)
 A number N(number of bill boards)
 P1 ,P2 ,P3 ,P4 ,P5 .... Pn (placement of N bill-boards)
 R1 ,R2 ,R3 ,R4 ,R5 .... Rn (revenue from each bill-board)
-A number T (neccessary distance b/w two bill-board)
+A number T (necessary distance b/w two bill-board)
 Output Format
 Find the maximum revenue that can be generated.
 Check the sample output and question video.
@@ -81,7 +81,10 @@ public class HighwayBillboard {
             }
             else{
                 int ifBillboardNotInstalled = maxRevenue2[i-1];
-                int ifInstalled = maxRevenue2[i-T-1] + map.get(i);
+                int ifInstalled = map.get(i);
+                if(i>=T+1){ // Check: if i < T then it will retrieve negative index value - It will result in ArrayOutOfIndexBound Exception.
+                    ifInstalled += maxRevenue2[i-T-1];
+                }
                 maxRevenue2[i] = Math.max(ifBillboardNotInstalled,ifInstalled);
             }
         }
