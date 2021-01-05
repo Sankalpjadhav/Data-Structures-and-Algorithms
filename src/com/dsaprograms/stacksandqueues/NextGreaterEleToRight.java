@@ -50,6 +50,7 @@ public class NextGreaterEleToRight {
         for(int i=0;i<n;i++){
             arr[i] = sc.nextInt();
         }
+        // Approach 1 - Traverse from right to left.
         int [] nextGreaterElements = new int[n];
         Stack<Integer> stack = new Stack<Integer>();
         stack.push(arr[n-1]);
@@ -68,6 +69,28 @@ public class NextGreaterEleToRight {
         }
         for(int i=0;i<nextGreaterElements.length;i++){
             System.out.println("Next greater element of "+arr[i]+" to the right side is: "+nextGreaterElements[i]);
+        }
+        System.out.println();
+        // Approach 2 - Traverse from left to right.
+        int [] nextGreaterElements2 = new int [n];
+        Stack<Integer> stack2 = new Stack<Integer>();
+        stack2.push(0); // On stack push indexes instead of values so that while assigning greater element to those values we can have indexes.
+        for(int i=1;i<n;i++){
+            while(!stack2.isEmpty() && arr[i]>arr[stack2.peek()]){ // pop elements which are smaller to the current element and push the current element to the stack.
+                int pos = stack2.peek();
+                nextGreaterElements2[pos] = arr[i];
+                stack2.pop();
+            }
+            stack2.push(i);
+        }
+        // The remaining elements in stack has no greater elements so put -1
+        while(!stack2.isEmpty()){
+            int pos = stack2.peek();
+            nextGreaterElements2[pos] = -1;
+            stack2.pop();
+        }
+        for(int i=0;i<nextGreaterElements2.length;i++){
+            System.out.println("Next greater element of "+arr[i]+" to the right side is: "+nextGreaterElements2[i]);
         }
     }
 }
