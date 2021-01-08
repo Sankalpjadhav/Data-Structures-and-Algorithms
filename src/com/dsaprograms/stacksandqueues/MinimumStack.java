@@ -68,29 +68,6 @@ Sample Output
 10
  */
 public class MinimumStack {
-    Queue < Integer > mainQ;
-    Queue < Integer > helperQ;
-
-    public QueueToStackAdapter() {
-        mainQ = new ArrayDeque< >();
-        helperQ = new ArrayDeque < > ();
-    }
-
-    int size() {
-        // write your code here
-    }
-
-    void push(int val) {
-        // write your code here
-    }
-
-    int pop() {
-        // write your code here
-    }
-
-    int top() {
-        // write your code here
-    }
     public static class MinStack {
         Stack< Integer > data;
         int min;
