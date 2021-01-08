@@ -67,7 +67,7 @@ Sample Output
 1
 10
  */
-public class QueueToStackAdapter {
+public class QueueToStackAdapter1 {
     public static class QueueToStackAdapt {
         Queue < Integer > mainQ;
         Queue < Integer > helperQ;
