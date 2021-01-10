@@ -1,5 +1,10 @@
 package com.dsaprograms.linkedlist;
-
+/*
+Original Linkedlist:
+5 6 2 10 12 11 19 15
+Folded Linkedlist:
+5 15 6 19 2 11 10 12
+ */
 public class FoldALinkelist {
     private static Node head;
     private static class Node{
