@@ -1,6 +1,4 @@
 package com.dsaprograms.generictree;
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.Stack;
@@ -77,15 +75,14 @@ public class PredecessorAndSuccessorOfElement {
     }
 
     public static void main(String[] args) throws Exception {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        int n = Integer.parseInt(br.readLine());
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
         int[] arr = new int[n];
-        String[] values = br.readLine().split(" ");
         for (int i = 0; i < n; i++) {
-            arr[i] = Integer.parseInt(values[i]);
+            arr[i] = sc.nextInt();
         }
 
-        int data = Integer.parseInt(br.readLine());
+        int data = sc.nextInt();
 
         Node root = construct(arr);
         predecessor = null;
