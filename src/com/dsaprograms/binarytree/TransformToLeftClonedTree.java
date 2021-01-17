@@ -1,7 +1,38 @@
 package com.dsaprograms.binarytree;
-
 import java.util.Stack;
-
+/*
+1. You are given a partially written BinaryTree class.
+2. You are required to complete the body of createLeftCloneTree function.
+The function is expected to create a new node for every node equal in value to it and inserted between itself and it's left child.
+3. Input and Output is managed for you.
+Input Format
+Input is managed for you.
+Output Format
+Output is managed for you.
+Constraints
+None
+Sample Input
+50, 25, 12, null, null, 37, 30, null, null, null, 75, 62, null, 70, null, null, 87, null, null
+Sample Output
+50->50<-75
+25->50<-.
+25->25<-37
+12->25<-.
+12->12<-.
+.->12<-.
+37->37<-.
+30->37<-.
+30->30<-.
+.->30<-.
+75->75<-87
+62->75<-.
+62->62<-70
+.->62<-.
+70->70<-.
+.->70<-.
+87->87<-.
+.->87<-.
+ */
 public class TransformToLeftClonedTree {
     // Node class
     static class Node{
