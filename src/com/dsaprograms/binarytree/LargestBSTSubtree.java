@@ -112,6 +112,7 @@ public class LargestBSTSubtree {
                 stack.pop();
             }
         }
+
         BSTPair result = isBST(root);
         System.out.println(result.bstRoot.data+"@"+result.bstSize);
     }
