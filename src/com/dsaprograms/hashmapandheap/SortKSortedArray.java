@@ -10,6 +10,7 @@ import java.util.Scanner;
 
 Note -> You can use at-max k extra space and nlogk time complexity.
  */
+
 public class SortKSortedArray {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
