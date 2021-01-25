@@ -44,7 +44,6 @@ Formula to find :
  leftChild(i) = 2*parent(i) + 1;
  rightChild(i) = 2*parent(i) + 2;
  parent(i) = (anyChild(i) - 1)/2; anyChild(i) can be leftChild(i) or rightChild(i)
-
  Rules to be followed:
  Higher order property: Parent should have higher property than child.
  Complete binary tree: (level - 1) should be filled and to enter the value, it should be done from left side.
