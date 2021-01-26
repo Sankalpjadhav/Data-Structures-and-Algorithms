@@ -2,6 +2,7 @@ package com.dsaprograms.graphs;
 import java.util.ArrayList;
 import java.util.Scanner;
 /*
+Similar concept for Leetcode: 323 Number of connected components of graph.
 1. You are given a graph.
 2. You are required to find and print all connected components of the graph.
 Sample Input
