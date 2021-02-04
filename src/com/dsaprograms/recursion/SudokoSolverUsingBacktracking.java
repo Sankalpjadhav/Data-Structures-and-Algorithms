@@ -1,6 +1,9 @@
 package com.dsaprograms.recursion;
 import java.util.Scanner;
 /*
+37. Sudoku Solver(Hard) , 36. Valid Sudoku(Medium)
+https://leetcode.com/problems/sudoku-solver/
+https://leetcode.com/problems/valid-sudoku/
 1. You are give a partially filled 9*9 2-D array(arr) which represents an incomplete sudoku state.
 2. You are required to assign the digits from 1 to 9 to the empty cells following some rules.
 Rule 1 -> Digits from 1-9 must occur exactly once in each row.
