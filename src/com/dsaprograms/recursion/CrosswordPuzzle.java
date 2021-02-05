@@ -1,6 +1,40 @@
 package com.dsaprograms.recursion;
 import java.util.Scanner;
-
+/*
+1. You are given a 10*10 2-D array(arr) containing only '+' and '-' characters, which represents a
+    crossword puzzle.
+2. You are also given n number of words which need to be filled into the crossword.
+3. Cells containing '-' are to be filled with the given words.
+Constraints
+1 <= n <= 10
+Sample Input
++-++++++++
++-++++++++
++-++++++++
++-----++++
++-+++-++++
++-+++-++++
++++++-++++
+++------++
++++++-++++
++++++-++++
+4
+LONDON
+DELHI
+ICELAND
+ANKARA
+Sample Output
++L++++++++
++O++++++++
++N++++++++
++DELHI++++
++O+++C++++
++N+++E++++
++++++L++++
+++ANKARA++
++++++N++++
++++++D++++
+ */
 public class CrosswordPuzzle {
     static void solvePuzzle(char[][] puzzle, String [] words, int wordIndex){
         if(wordIndex==words.length){
