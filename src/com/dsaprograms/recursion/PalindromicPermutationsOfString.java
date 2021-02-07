@@ -75,7 +75,7 @@ public class PalindromicPermutationsOfString {
         }
 
         if(numOfOddCharacters>1){
-            System.out.println("No palindromic permutations is possibble.");
+            System.out.println("No palindromic permutations is possible.");
             return;
         }
 
