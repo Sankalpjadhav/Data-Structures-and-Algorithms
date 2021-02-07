@@ -1,7 +1,7 @@
 package com.dsaprograms.recursion;
 import java.util.Scanner;
 /*
-131. Palindrome Partitioning
+Similar concept: 131. Palindrome Partitioning
 1. You are given a string of length n.
 2. You have to partition the given string in such a way that every partition is a palindrome.
 INPUT:
