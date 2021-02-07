@@ -6,6 +6,11 @@ import java.util.Scanner;
 1. You are given a string of length n.
 2. You have to print all the palindromic permutations of the given string.
 3. If no palindromic permutation exists for the given string, print "No Palindromic permutations possible".
+Sample Input
+aaabb
+Sample Output
+ababa
+baaab
  */
 public class PalindromicPermutationsOfString {
 
