@@ -35,7 +35,6 @@ public class CoinChangeCombination2 {
             }
             return;
         }
-
         for(int i=totalAmount/coins[index];i>=1;i--){ // Coins taking part.
             String combinations = "";
             for(int j=0;j<i;j++){
