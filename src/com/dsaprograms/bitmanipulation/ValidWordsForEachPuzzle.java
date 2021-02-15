@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Scanner;
 /*
-LeetCode: 1178. Number of Valid Words for Each Puzzle | Number Of Valid Words
+LeetCode: 1178. Number of Valid Words for Each Puzzle
 1. You are given N number of words.
 2. You are given M puzzles in the form of M strings.
 3. For a given puzzle, a word is valid if both the following conditions are confirmed -
