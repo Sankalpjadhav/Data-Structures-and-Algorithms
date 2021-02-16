@@ -64,7 +64,7 @@ public class OneDuplicateAndOneMissing {
                 System.out.println("Missing number is: "+y);
                 break;
             }
-            else{
+            else if(elem==y){
                 System.out.println("Duplicate number is: "+y);
                 System.out.println("Missing number is: "+x);
                 break;
