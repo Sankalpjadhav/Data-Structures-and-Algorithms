@@ -46,6 +46,6 @@ public class LeetCode647CountPalindromicSubstring {
                 }
             }
         }
-        System.out.println("Count of palindromic subsequences: "+count);
+        System.out.println("Count of palindromic substrings: "+count);
     }
 }
