@@ -13,7 +13,7 @@ Input: "aaa"
 Output: 6
 Explanation: Six palindromic strings: "a", "a", "a", "aa", "aa", "aaa".
  */
-public class LeetCode647CountPalindromicSubseq {
+public class LeetCode647CountPalindromicSubstring {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String str = sc.nextLine();
