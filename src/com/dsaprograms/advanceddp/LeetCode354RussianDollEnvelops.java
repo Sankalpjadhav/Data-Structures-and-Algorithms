@@ -35,6 +35,7 @@ public class LeetCode354RussianDollEnvelops {
             int max = 0;
             for(int j=0;j<i;j++){
                 if(envelopes[j][1]<envelopes[i][1] && envelopes[j][0]<envelopes[i][0]){
+                    // Width is also checked because we have sorted based on width but what if width is also same. So strictly checking.
                     if(dp[j]>max){
                         max = dp[j];
                     }
