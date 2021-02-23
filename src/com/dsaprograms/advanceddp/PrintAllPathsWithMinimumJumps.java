@@ -2,6 +2,10 @@ package com.dsaprograms.advanceddp;
 import java.util.ArrayDeque;
 import java.util.Scanner;
 /*
+LeetCode: 55. Jump Game
+https://leetcode.com/problems/jump-game/
+Is also based on this. If dp[0] is not null that means path exist and we can return true otherwise false.
+
 Print all paths with minimum jumps.
 1. You are given a number N representing number of elements.
 2. You are given N space separated numbers (ELE : elements).
@@ -42,7 +46,7 @@ public class PrintAllPathsWithMinimumJumps {
     public static void printAllPathsWithMinimumJumps(int [] nums){
         Integer [] dp = new Integer[nums.length];
         dp[nums.length-1] = 0;
-
+        
         for(int index = dp.length-2; index>=0; index--){
             int steps = nums[index];
             int minimum = Integer.MAX_VALUE;
