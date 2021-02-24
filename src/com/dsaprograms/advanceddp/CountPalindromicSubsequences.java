@@ -137,38 +137,23 @@ public class CountPalindromicSubsequences {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String str = sc.nextLine();
-        int [][] dp = new int[str.length()][str.length()];
-        for(int gap=0;gap<dp.length;gap++){
-            for(int i=0,j=gap;j<dp[0].length;i++,j++){
-                if(gap==0){
-                    // It has 2 choices empty and that character itself: So we only consider single character itsef.
+        int[][] dp = new int[str.length()][str.length()];
+        for(int g = 0; g < dp.length; g++){
+            for(int i = 0, j = g; j < dp[0].length; i++, j++){
+                if(g == 0){
                     dp[i][j] = 1;
-                }
-                else if(gap==1){
-                    if(str.charAt(i)==str.charAt(j)){
-                        dp[i][j] = 3;
-                    }
-                    else{
-                        dp[i][j] = 2;
-                    }
-                }
-                else{
-                    /*
-                        Now two cases:
-                        1. c1!=c2
-                        2. c1==c2
-                        When c1==c2, Count  = Count(Subsequences([c1]middlePart)) + Count(Subsequences(middlePart[c2])) + 1
-                        When c1!=c2, Count = Count(Subsequences([c1]middlePart)) + Count(Subsequences(middlePart[c2])) - Count([_]Subsequences(middlePart)[_])
-                    */
-                    if(str.charAt(i)==str.charAt(j)){
-                        dp[i][j] = dp[i][j-1] + dp[i+1][j] + 1;
-                    }
-                    else{ //c1!=c2
-                        dp[i][j] = dp[i][j-1] + dp[i+1][j] - dp[i+1][j-1];
+                } else if(g == 1){
+                    dp[i][j] = str.charAt(i) == str.charAt(j)? 3: 2;
+                } else {
+                    if(str.charAt(i) == str.charAt(j)){
+                        dp[i][j] = dp[i + 1][j] + dp[i][j - 1] + 1;
+                    } else {
+                        dp[i][j] = dp[i + 1][j] + dp[i][j - 1] - dp[i + 1][j - 1];
                     }
                 }
             }
         }
-        System.out.println("Count of palindromic subsequences: "+dp[0][str.length()-1]);
+
+        System.out.println("Count of palindromic subsequences: "+dp[0][dp[0].length - 1]);
     }
 }
