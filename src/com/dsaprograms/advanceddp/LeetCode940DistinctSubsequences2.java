@@ -55,9 +55,22 @@ public int distinctSubseqII(String S) {
         dp[i] = (dp[i-1]*2) % mod;
         if(locc[ch-'a']!=-1){
             dp[i] = (dp[i] % mod - dp[locc[ch-'a']-1] % mod + mod) % mod;
+
         }
         locc[ch-'a'] = i;
     }
     return dp[n-1]-1;
     }
+
+    /* why +mod is required in this line dp[i]-=(((dp[last[S[i-1]]]%mod)+mod)%mod);
+            Now for example lets take mod = 5
+            lets suppose dp[i-1] = 4 &  dp[i] = 6
+            now since dp[i] is more than 5, we have to take mod. Now it will become 1
+
+            now since I'm doing a subtraction
+            dp[i]-=dp[i-1]  // dp[i] will become -3
+            dp[i] has become negative, so I am adding mod, because technically it changes nothing in the answer! // now dp[i] will become -3+5 =2
+            And because of that dp[i] has again become positive!
+            we dont want dp[i] to be negative, so remember whenever there is a substraction involved in the question and a mod is involved, adding a mod becomes mandatory for us!
+            */
  */
