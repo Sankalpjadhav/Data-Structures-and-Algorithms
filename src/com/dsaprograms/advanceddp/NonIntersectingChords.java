@@ -18,8 +18,7 @@ Sample Output
 public class NonIntersectingChords {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int points = sc.nextInt();
-        int line = points/2;
+        int line = sc.nextInt();
         int [] dp = new int[line+1];
         dp[0] = 1;
         dp[1] = 1;
