@@ -1,6 +1,7 @@
 package com.dsaprograms.advanceddp;
 import java.util.Scanner;
 /*
+Optimal Binary Search Tree
 1. You are given two arrays -
    The first array(keys), which is sorted and has distinct integers, represents search keys.
    Second one(freq) represents frequency counts, where freq[i] is the number of searches to keys[i].
