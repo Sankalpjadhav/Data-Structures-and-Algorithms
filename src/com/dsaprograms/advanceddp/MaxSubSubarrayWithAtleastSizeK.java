@@ -1,6 +1,7 @@
 package com.dsaprograms.advanceddp;
 import java.util.Scanner;
 /*
+Maximum Sum Subarray with at least Size K
 1. You are given an array(arr) of integers and a number k.
 2. You have to find maximum sub-array sum in the given array.
 3. The sub-array must have at least k elements.
