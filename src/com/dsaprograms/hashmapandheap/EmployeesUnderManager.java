@@ -1,4 +1,4 @@
-package com.dsaprograms.advanceddp;
+package com.dsaprograms.hashmapandheap;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Scanner;
