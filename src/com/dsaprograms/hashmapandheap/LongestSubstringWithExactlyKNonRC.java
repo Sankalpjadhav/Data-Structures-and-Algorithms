@@ -2,6 +2,7 @@ package com.dsaprograms.hashmapandheap;
 import java.util.HashMap;
 import java.util.Scanner;
 /*
+Longest substring with exactly k non repeating characters.
 1. You are given a string(str) and a number K.
 2. You have to find length of the longest substring that has exactly k unique characters.
 3. If no such substring exists, print "-1".
