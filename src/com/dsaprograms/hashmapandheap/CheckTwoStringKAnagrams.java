@@ -2,6 +2,7 @@ package com.dsaprograms.hashmapandheap;
 import java.util.HashMap;
 import java.util.Scanner;
 /*
+Check if two strings are K Anagrams.
 1. You are given two strings s1, s2, and a number K.
 2. You have to find if two strings are K-anagrams of each other or not.
 3. Two strings are called K-anagrams if
