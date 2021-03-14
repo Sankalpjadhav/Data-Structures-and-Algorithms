@@ -9,7 +9,7 @@ Sample Input:
 8
 1 2 998 72 87576 21 45 -1
 Sample Output:
-
+Pairs with equal sum: false
  */
 public class PairsWithEqualSum {
     public static boolean getPairs(int [] nums){
