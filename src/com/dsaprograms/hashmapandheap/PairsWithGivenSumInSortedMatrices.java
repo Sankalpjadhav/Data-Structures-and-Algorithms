@@ -42,7 +42,7 @@ public class PairsWithGivenSumInSortedMatrices {
             }
         }
         */
-        //Approach 2 Time: O(n^2) Space: O(1)
+        // Efficient: Approach 2 Time: O(n^2) Space: O(1)
         int i=0,j=0;
         int k= N-1,l=N-1;
         while((i < N) && (k >=-1)){
