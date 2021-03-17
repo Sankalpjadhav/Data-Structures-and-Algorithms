@@ -39,6 +39,7 @@ public class QuadrupleSumMethod1 {
                 result.add(new ArrayList<>(Arrays.asList(nums[startIndex],nums[endIndex])));
                 startIndex++;
                 endIndex--;
+                // If there are duplicate values then this is very useful.
                 while(nums[startIndex]==nums[startIndex-1]) startIndex++;
                 while(nums[endIndex]==nums[endIndex-1]) endIndex++;
             }
